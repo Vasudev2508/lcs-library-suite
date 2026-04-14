@@ -4,6 +4,7 @@ import { BookOpen, ArrowRight } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import type { UserRole } from '@/types/library';
 import { useNavigate } from 'react-router-dom';
+import heroImage from '@/assets/library-hero.jpg';
 
 const roles: { role: UserRole; label: string; desc: string }[] = [
   { role: 'admin', label: 'Admin', desc: 'Full system access' },
