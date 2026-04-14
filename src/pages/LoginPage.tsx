@@ -24,7 +24,19 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center gradient-mesh bg-background p-4">
+    <div className="min-h-screen flex bg-background">
+      {/* Left: Hero Image */}
+      <div className="hidden lg:block lg:w-1/2 relative overflow-hidden">
+        <img src={heroImage} alt="Digital library" className="absolute inset-0 w-full h-full object-cover" width={1280} height={720} />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent" />
+        <div className="absolute bottom-12 left-12 max-w-md">
+          <h2 className="text-4xl font-display font-bold text-primary-foreground leading-tight">Empowering Knowledge,<br />One Book at a Time</h2>
+          <p className="text-primary-foreground/70 mt-3">CSE Department Digital Library System</p>
+        </div>
+      </div>
+
+      {/* Right: Login Form */}
+      <div className="flex-1 flex items-center justify-center gradient-mesh p-4">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
