@@ -24,15 +24,15 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route element={<DashboardLayout />}>
-            <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/books" element={<BooksPage />} />
-            <Route path="/transactions" element={<TransactionsPage />} />
-            <Route path="/notifications" element={<NotificationsPage />} />
-            <Route path="/reports" element={<ReportsPage />} />
-            <Route path="/my-books" element={<MyBooksPage />} />
-            <Route path="/search" element={<BooksPage />} />
-            <Route path="/members" element={<DashboardPage />} />
-            <Route path="/settings" element={<DashboardPage />} />
+            <Route path="./dashboard" element={<DashboardPage />} />
+            <Route path="./books" element={<BooksPage />} />
+            <Route path="./transactions" element={<TransactionsPage />} />
+            <Route path="./notifications" element={<NotificationsPage />} />
+            <Route path="./reports" element={<ReportsPage />} />
+            <Route path="./my-books" element={<MyBooksPage />} />
+            <Route path="./search" element={<BooksPage />} />
+            <Route path="./members" element={<DashboardPage />} />
+            <Route path="./settings" element={<DashboardPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

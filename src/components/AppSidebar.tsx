@@ -16,15 +16,15 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard, roles: ['admin', 'librarian', 'student', 'faculty'] },
-  { label: 'Books', path: '/books', icon: BookOpen, roles: ['admin', 'librarian', 'student', 'faculty'] },
-  { label: 'Issue / Return', path: '/transactions', icon: ArrowLeftRight, roles: ['admin', 'librarian'] },
-  { label: 'Search', path: '/search', icon: Search, roles: ['student', 'faculty'] },
-  { label: 'My Books', path: '/my-books', icon: BookOpen, roles: ['student', 'faculty'] },
-  { label: 'Members', path: '/members', icon: Users, roles: ['admin', 'librarian'] },
-  { label: 'Reports', path: '/reports', icon: BarChart3, roles: ['admin', 'librarian'] },
-  { label: 'Notifications', path: '/notifications', icon: Bell, roles: ['admin', 'librarian', 'student', 'faculty'] },
-  { label: 'Settings', path: '/settings', icon: Settings, roles: ['admin'] },
+  { label: 'Dashboard', path: './dashboard', icon: LayoutDashboard, roles: ['admin', 'librarian', 'student', 'faculty'] },
+  { label: 'Books', path: './books', icon: BookOpen, roles: ['admin', 'librarian', 'student', 'faculty'] },
+  { label: 'Issue / Return', path: './transactions', icon: ArrowLeftRight, roles: ['admin', 'librarian'] },
+  { label: 'Search', path: './search', icon: Search, roles: ['student', 'faculty'] },
+  { label: 'My Books', path: './my-books', icon: BookOpen, roles: ['student', 'faculty'] },
+  { label: 'Members', path: './members', icon: Users, roles: ['admin', 'librarian'] },
+  { label: 'Reports', path: './reports', icon: BarChart3, roles: ['admin', 'librarian'] },
+  { label: 'Notifications', path: './notifications', icon: Bell, roles: ['admin', 'librarian', 'student', 'faculty'] },
+  { label: 'Settings', path: './settings', icon: Settings, roles: ['admin'] },
 ];
 
 const AppSidebar = () => {
